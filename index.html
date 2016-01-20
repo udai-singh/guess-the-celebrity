@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="confusionApp">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Guess The Celebrity</title>
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/mystyles.css" media="screen" title="no title" charset="utf-8">
+</head>
+
+<body>
+    <div class="container">
+        <div class="page-header">
+          <h1><span class="glyphicon glyphicon-user"></span> Guess the Celebrity !</h1>
+        </div>
+        <div class="row row-content" ng-controller="MenuController">
+          <div class="col-lg-8 col-lg-offset-2">
+          <!-- Carousel starts here -->
+                <div class="carousel slide" id="mycarousel" data-ride="carousel" data-interval="false">
+                  <!-- Carousal data starts  -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item" ng-class="{active:!$index}" ng-repeat="image in images">
+                            <img src="{{image.path}}" ng-class="{blur:blur}">
+                            <div class="carousel-caption">
+                              <button type="button" name="button" class="btn btn-success" ng-click="toggleBlur()">{{blur ? 'Reveal Answer!':'Blur Image'}}</button>
+                              <div ng-hide="blur">
+                                <h3>{{image.celeb}}</h3>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Carousal data ends  -->
+
+                    <!-- Carousel-controls starts-->
+                    <a class="left carousel-control" href="#mycarousel" role="button" data-slide="prev" ng-click="forceBlur()">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#mycarousel" role="button" data-slide="next" ng-click="forceBlur()">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                    <!-- Carousel-controls ends-->
+        </div>
+
+        </div>
+    </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+<script src="scripts/app.js"></script>
+
+</body>
+
+</html>
