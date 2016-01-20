@@ -1,0 +1,22 @@
+
+.row-content {
+  margin: 0px auto;
+  padding: 25px 0px;
+  border-bottom: 1px ridge;
+  min-height: 100px;
+}
+body {
+  align: center;
+  padding: 50px 0px 0px 0px;
+  z-index: 0;
+}
+.blur {
+  -webkit-filter: blur(25px);
+  filter: blur(25px);
+}
+.custom-well {
+
+  height: 250px;
+  min-height: 250px;
+  max-height: 250px;
+}
