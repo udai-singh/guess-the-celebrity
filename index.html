@@ -13,21 +13,25 @@
     <link rel="stylesheet" href="styles/mystyles.css" media="screen" title="no title" charset="utf-8">
 </head>
 
-<body>
+<body  ng-controller="MenuController">
     <div class="container">
         <div class="page-header">
-          <h1><span class="glyphicon glyphicon-user"></span> Guess the Celebrity !</h1>
+          <h3><span class="glyphicon glyphicon-user"></span> Guess the Celebrity !</h3>
         </div>
-        <div class="row row-content" ng-controller="MenuController">
-          <div class="col-lg-8 col-lg-offset-2">
+        <div class="row row-content text-center">
+          <label class="btn btn-danger"><input type="radio" ng-model="industry" value="bollywood">Bollywood</label>
+          <label class="btn btn-primary"><input type="radio" ng-model="industry" value="hollywood">Hollywood</label>
+        </div>
+        <div class="row row-content">
+          <div class="col-lg-8 col-lg-offset-2" style="border:1px solid">
           <!-- Carousel starts here -->
                 <div class="carousel slide" id="mycarousel" data-ride="carousel" data-interval="false">
                   <!-- Carousal data starts  -->
                     <div class="carousel-inner" role="listbox">
-                        <div class="item" ng-class="{active:!$index}" ng-repeat="image in images">
+                        <div class="item" ng-class="{active:!$index}" ng-repeat="image in images | filter : industry">
                             <img src="{{image.path}}" ng-class="{blur:blur}">
                             <div class="carousel-caption">
-                              <button type="button" name="button" class="btn btn-success" ng-click="toggleBlur()">{{blur ? 'Reveal Answer!':'Blur Image'}}</button>
+                              <!-- <button type="button" name="button" class="btn btn-success" ng-click="toggleBlur()">{{blur ? 'Reveal Answer!':'Blur Image'}}</button> -->
                               <div ng-hide="blur">
                                 <h3>{{image.celeb}}</h3>
                               </div>
@@ -46,7 +50,17 @@
                         <span class="sr-only">Next</span>
                     </a>
                     <!-- Carousel-controls ends-->
-        </div>
+                </div>
+                <!-- <div class="col-xs-2 col-xs-offset-2 text-center">
+                  <a class="btn btn-primary" href="#mycarousel" role="button" data-slide="prev">Previous</a>
+                </div> -->
+                <br>
+                <div class="text-center">
+                  <button type="button" name="button" class="btn btn-success" ng-click="toggleBlur()">{{blur ? 'Reveal Answer!':'Blur Image'}}</button>
+                </div>
+                <!-- <div class="col-xs-2 col-xs-offset-4 text-center">
+                  <a class="btn btn-primary" href="#mycarousel" role="button" data-slide="next">Next</a>
+                </div> -->
 
         </div>
     </div>
