@@ -18,12 +18,12 @@
         <div class="page-header">
           <h3><span class="glyphicon glyphicon-user"></span> Guess the Celebrity !</h3>
         </div>
-        <div class="row row-content text-center">
-          <label class="btn btn-danger"><input type="radio" ng-model="industry" value="bollywood">Bollywood</label>
-          <label class="btn btn-primary"><input type="radio" ng-model="industry" value="hollywood">Hollywood</label>
-        </div>
         <div class="row row-content">
-          <div class="col-lg-8 col-lg-offset-2" style="border:1px solid">
+          <div class="col-lg-2 col-lg-offset-1 text-center">
+                  <label class="btn btn-danger"><input type="radio" ng-model="industry" value="bollywood" ng-checked="true">Bollywood</label>
+                  <label class="btn btn-primary"><input type="radio" ng-model="industry" value="hollywood">Hollywood</label>
+          </div>
+          <div class="col-lg-6 col-lg-offset-1">
           <!-- Carousel starts here -->
                 <div class="carousel slide" id="mycarousel" data-ride="carousel" data-interval="false">
                   <!-- Carousal data starts  -->
