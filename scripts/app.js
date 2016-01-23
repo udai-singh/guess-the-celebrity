@@ -23,17 +23,17 @@ angular.module('confusionApp', [])
         },
         {
           "celeb": "Madhuri Dixit",
-          "industry": "bollywood",
+          "industry": "hollywood",
           "path": "http://bollywoodfans.in/uploads/gallery/category_24/gallery_4_24_53681.jpg"
         },
         {
           "celeb": "Vivek Oberoi",
-          "industry": "bollywood",
+          "industry": "hollywood",
           "path": "http://www.pinkvilla.com/files/zva_0.jpg?1409743132"
         },
         {
           "celeb": "Amitabh Bachchan",
-          "industry": "bollywood",
+          "industry": "hollywood",
           "path": "http://www.clipper28.com/images/Sep_2015/12-09-2015/Amitabh-Bachchan.jpg"
         },
         {
@@ -80,11 +80,6 @@ angular.module('confusionApp', [])
           "celeb": "Ayesha Takia",
           "industry": "bollywood",
           "path": "http://www.iluvcinema.in/hindi/wp-content/gallery/ayesha-takia-pics/Ayesha-Takia-Pics-12.jpg"
-        },
-        {
-          "celeb": "Tabu",
-          "industry": "bollywood",
-          "path": "http://www.bollywoodeye.co.uk/wp-content/uploads/2014/02/tabu-76h.jpg"
         },
         {
           "celeb": "Sunny Deol",
@@ -312,5 +307,24 @@ angular.module('confusionApp', [])
           "path": "http://www.hdwallpapers99.com/wp-content/uploads/2015/11/Katrina-Kaif-stills-3.jpg"
         }
       ];
+
+      var shuffleArray = function(array) {
+        var m = array.length, t, i;
+
+        // While there remain elements to shuffle
+        while (m) {
+          // Pick a remaining element…
+          i = Math.floor(Math.random() * m--);
+
+          // And swap it with the current element.
+          t = array[m];
+          array[m] = array[i];
+          array[i] = t;
+        }
+
+        return array;
+      }
+
+      shuffleArray($scope.images);
 
     }]);
