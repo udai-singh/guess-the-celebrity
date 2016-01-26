@@ -26,7 +26,10 @@ angular.module('confusionApp', [])
           return array;
         }
 
-        shuffleArray($scope.images);
+        $scope.randomize = function(){
+            shuffleArray($scope.images);
+        };
+
 
       });
       $scope.blur = true;
