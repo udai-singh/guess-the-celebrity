@@ -11,8 +11,8 @@ body {
   z-index: 0;
 }
 .blur {
-  -webkit-filter: blur(25px);
-  filter: blur(25px);
+  -webkit-filter: blur(20px);
+  filter: blur(20px);
 }
 .btn {
   margin-right: 5px;
