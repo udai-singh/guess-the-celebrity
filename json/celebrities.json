@@ -315,11 +315,6 @@
     "path": "http://menshairstylesguide.com/wp-content/uploads/2015/04/Justin-Timberlake-hairstyle-2.jpg"
   },
   {
-    "celeb": "Ryan Gosling",
-    "industry": "hollywood",
-    "path": "http://raannt.com/wp-content/uploads/2014/01/ryan-gosling-sexy_raannt-1024x768.jpg"
-  },
-  {
     "celeb": "Ryan Reynolds",
     "industry": "hollywood",
     "path": "http://pinnest.net/newpinnest/wp-content/uploads/2013/08/1376740082b134d.jpg"
@@ -338,6 +333,46 @@
     "celeb": "Neil Patrick Harris",
     "industry": "hollywood",
     "path": "http://www.returnofkings.com/wp-content/uploads/2014/05/Barney-Stinson.png"
+  },
+  {
+    "celeb": "Ellen Degeneres",
+    "industry": "hollywood",
+    "path": "http://3.bp.blogspot.com/-leNz34r1Cr8/UoIy_Fu3lxI/AAAAAAAAAbI/GiCZytzzvSk/s1600/ellen_degeneres_hd_wallpapers-1024x768.jpg"
+  },
+  {
+    "celeb": "Taylor Swift",
+    "industry": "hollywood",
+    "path": "http://images5.fanpop.com/image/photos/26300000/beautiful-taylor-taylor-swift-26316281-1024-768.jpg"
+  },
+  {
+    "celeb": "Christian Bale",
+    "industry": "hollywood",
+    "path": "http://biografieonline.it/img/bio/Christian_Bale_1.jpg"
+  },
+  {
+    "celeb": "Leonardo DiCaprio",
+    "industry": "hollywood",
+    "path": "http://vamosalcine.com.ar/wp-content/uploads/2013/01/Leonardo-DiCaprio-deja-el-cine-para-cuidar-el-medio-ambiente-1024x768.jpg"
+  },
+  {
+    "celeb": "Anne Hathaway",
+    "industry": "hollywood",
+    "path": "http://images2.fanpop.com/images/photos/4700000/Anne-anne-hathaway-4725442-1024-768.jpg"
+  },
+  {
+    "celeb": "Chris Hemsworth",
+    "industry": "hollywood",
+    "path": "http://hdwallpapers.cat/wallpaper/chris_hemsworth_blond_blue_man_actor_white_hd-wallpaper-1913461.jpg"
+  },
+  {
+    "celeb": "Robert Downey Jr.",
+    "industry": "hollywood",
+    "path": "http://dl9fvu4r30qs1.cloudfront.net/0d/8d/a43a310441cab9fe4b4c59fc5ac9/robert-downey-jr.jpg"
+  },
+  {
+    "celeb": "Bradley Cooper",
+    "industry": "hollywood",
+    "path": "http://4.bp.blogspot.com/-MlOYHSCIbfs/Tj1CKpvCmyI/AAAAAAAAGGc/IX-8D1pJTTs/s1600/image_resize_uploaded.php.jpg"
   }
 ]
 }
