@@ -20,9 +20,9 @@
         </div>
         <div class="row row-content">
           <div class="col-lg-2 col-lg-offset-1 text-center">
-                  <label class="btn btn-danger"><input type="radio" ng-model="industry" value="bollywood" ng-change="forceBlur();randomize()"> Bollywood</label>
+                  <label class="btn btn-danger"><input type="radio" ng-model="industry" value="bollywood" ng-change="forceBlur();randomize()" ng-checked="true"> Bollywood</label>
                   <label class="btn btn-primary"><input type="radio" ng-model="industry" value="hollywood" ng-change="forceBlur();randomize()"> Hollywood</label>
-                  <!-- <label class="btn btn-warning"><input type="radio" ng-model="industry" value='' ng-change="forceBlur();randomize()"> Random</label> -->
+                  <!-- <label class="btn btn-warning"><input type="radio" ng-model="industry" value='' ng-change="forceBlur();randomize()" > Random</label> -->
           </div>
           <div class="col-lg-6 col-lg-offset-1">
           <!-- Carousel starts here -->
@@ -32,6 +32,7 @@
                         <div class="item" ng-class="{active:!$index}" ng-repeat="image in images | filter : industry" ng-init="randomize()">
                             <img src="{{image.path}}" ng-class="{blur:blur}">
                             <div class="carousel-caption">
+                              <h1>{{$index}}</h1>
                               <!-- <button type="button" name="button" class="btn btn-success" ng-click="toggleBlur()">{{blur ? 'Reveal Answer!':'Blur Image'}}</button> -->
                               <div ng-hide="blur">
                                 <h3>{{image.celeb}}</h3>
