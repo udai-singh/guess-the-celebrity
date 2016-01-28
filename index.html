@@ -29,10 +29,11 @@
                 <div class="carousel slide" id="mycarousel" data-ride="carousel" data-interval="false">
                   <!-- Carousal data starts  -->
                     <div class="carousel-inner" role="listbox">
-                        <div class="item" ng-class="{active:!$index}" ng-repeat="image in images | filter : industry" ng-init="randomize()">
+                        <div class="item" ng-class="{active:!$index}" ng-repeat="image in images | filter : industry">
                             <img src="{{image.path}}" ng-class="{blur:blur}">
                             <div class="carousel-caption">
                               <!-- <h1>{{$index}}</h1> -->
+                              <!-- <h1>{{industry}}</h1> -->
                               <!-- <button type="button" name="button" class="btn btn-success" ng-click="toggleBlur()">{{blur ? 'Reveal Answer!':'Blur Image'}}</button> -->
                               <div ng-hide="blur">
                                 <h3>{{image.celeb}}</h3>
