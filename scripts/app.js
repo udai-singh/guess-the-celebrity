@@ -26,12 +26,16 @@ angular.module('confusionApp', [])
           return array;
         }
 
+        shuffleArray($scope.images);
+
         $scope.randomize = function(){
             shuffleArray($scope.images);
         };
 
-
       });
+
+      $scope.industry = "bollywood";
+
       $scope.blur = true;
       $scope.checked = true;
 
