@@ -1,7 +1,7 @@
 'use strict';
 
 
-angular.module('confusionApp', [])
+angular.module('guessingApp', [])
 
     .controller('MenuController', ['$scope', '$http', function($scope, $http) {
 
@@ -46,4 +46,12 @@ angular.module('confusionApp', [])
       $scope.forceBlur = function() {
         $scope.blur = true;
       };
-  }]);
+  }])
+  .controller('FeedbackController',['$scope', function($scope){
+      $scope.feedback = {
+        firstName : "",
+        lastName  : "",
+        email     : ""
+      };
+  }])
+  ;
